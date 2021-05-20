@@ -1,0 +1,8 @@
+{
+  "name": "shimizu-kenzai-front",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/ningenMe/shimizu-kenzai-front.git",
+  "author": "ningenMe <amohkuru@gmail.com>",
+  "license": "MIT"
+}
