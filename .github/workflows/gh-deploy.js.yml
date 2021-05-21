@@ -19,7 +19,6 @@ jobs:
 
     steps:
     - uses: actions/checkout@v2
-
     - name: build
     - uses: actions/setup-node@v2
       with:
@@ -27,7 +26,6 @@ jobs:
     - run: |
         yarn install
         yarn build
-
       # - name: deploy
       # - uses: peaceiris/actions-gh-pages@v3
       #   if: github.ref == 'refs/heads/master'
