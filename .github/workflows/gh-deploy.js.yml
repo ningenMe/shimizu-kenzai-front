@@ -21,12 +21,10 @@ jobs:
       - name: checkout
       - uses: actions/checkout@v2
 
-      - name: node
+      - name: build
       - uses: actions/setup-node@v2
         with:
           node-version: ${{ matrix.node-version }}
-
-      - name: build
       - run: |
           yarn install
           yarn build
