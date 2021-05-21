@@ -18,15 +18,15 @@ jobs:
         # See supported Node.js release schedule at https://nodejs.org/en/about/releases/
 
     steps:
-      - uses: actions/checkout@v2
+    - uses: actions/checkout@v2
 
-      - name: build
-      - uses: actions/setup-node@v2
-        with:
-          node-version: ${{ matrix.node-version }}
-      - run: |
-          yarn install
-          yarn build
+    - name: build
+    - uses: actions/setup-node@v2
+      with:
+        node-version: ${{ matrix.node-version }}
+    - run: |
+        yarn install
+        yarn build
 
       # - name: deploy
       # - uses: peaceiris/actions-gh-pages@v3
