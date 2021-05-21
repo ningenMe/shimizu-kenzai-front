@@ -18,9 +18,8 @@ jobs:
         # See supported Node.js release schedule at https://nodejs.org/en/about/releases/
 
     steps:
-      - name: checkout
       - uses: actions/checkout@v2
-
+      
       - name: build
       - uses: actions/setup-node@v2
         with:
