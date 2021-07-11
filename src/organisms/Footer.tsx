@@ -1,9 +1,11 @@
-import { Navbar,NavbarBrand } from 'reactstrap';
+import { Navbar } from 'react-bootstrap';
+import { NavbarStyle } from 'styles/NavbarStyle'
+import { NavbarBrandStyle } from 'styles/NavbarBrandStyle'
 
 export const Footer = () => {
     return (
-    <Navbar color="dark" dark expand="lg">
-        <NavbarBrand>&copy; 2021　清水建材</NavbarBrand>
+    <Navbar expand="lg" style={NavbarStyle}>
+        <Navbar.Brand style={NavbarBrandStyle}>&copy; 2021　清水建材</Navbar.Brand>
     </Navbar>
     );
 }
