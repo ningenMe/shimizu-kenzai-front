@@ -1,10 +1,10 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import { Collapse,
          Navbar,
          NavbarToggler,
         } from 'reactstrap';
 
-export const Header: React.FC = () => {
+export const Header = () => {
     const [navbarToggleOpen, setNavbarToggleOpen] = useState(false);
     const toggleNavbar = () => setNavbarToggleOpen(!navbarToggleOpen);
 
@@ -16,4 +16,3 @@ export const Header: React.FC = () => {
     </Navbar>
     );
 }
-export default Header

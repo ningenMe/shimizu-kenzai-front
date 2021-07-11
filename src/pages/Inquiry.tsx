@@ -1,9 +1,9 @@
 import {Container} from '@material-ui/core';
 
-export const Home = () => {
+export const Inquiry = () => {
   return (
       <Container>
-        ホーム
+          問い合わせ
       </Container>
     );
 }

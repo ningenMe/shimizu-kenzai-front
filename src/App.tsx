@@ -1,13 +1,12 @@
-import React from 'react';
-import Header from './components/Header'
-import Router from './components/Router'
-import Footer from './components/Footer'
+import {Header} from 'organisms/Header'
+import {PathRouter} from 'organisms/Router'
+import {Footer} from 'organisms/Footer'
 
-export const App: React.FC = () => {
+export const App = () => {
     return (
       <>
         <Header />
-        <Router />
+        <PathRouter />
         <Footer />
       </>
       );
