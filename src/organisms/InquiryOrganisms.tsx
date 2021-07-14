@@ -9,7 +9,7 @@ export const Address = () => {
             <Grid item xs={4}>
             </Grid>
             <Grid item xs={4}>
-                <Card>
+                <Card style={{backgroundColor:"#FFFFCC"}}>
                     542-0012
                 </Card>
             </Grid>
