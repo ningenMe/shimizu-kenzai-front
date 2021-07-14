@@ -15,10 +15,6 @@ export const Company = () => {
             <Grid item xs={12} spacing={3}>
               <Overview />
             </Grid>
-
-            <Grid item xs={12} spacing={3}>
-              <PageTitle body="沿革"/> 
-            </Grid>
             <Grid item xs={12} spacing={3}>
               <History />
             </Grid>
