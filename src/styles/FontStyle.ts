@@ -1,0 +1,1 @@
+export const KosugiMaruStyle = {fontFamily: "'Kosugi Maru', sans-serif"}

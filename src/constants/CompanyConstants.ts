@@ -1,4 +1,5 @@
 import {CompanyContent} from 'interfaces/CompanyInterfaces'
+import {general} from 'constants/GeneralConstants'
 
 export const orverViewContents : ReadonlyArray<CompanyContent> = [
     {title:"創業",        list:["昭和22年4月"]},
@@ -6,8 +7,8 @@ export const orverViewContents : ReadonlyArray<CompanyContent> = [
     {title:"資本金",      list:["2000万円"]},
     {title:"役員",        list:["代表取締役会長　清水　洋","代表取締役会長　清水　久則"]},
     {title:"主要取引銀行",list:["みずほ銀行　なんば支店","三菱UFJ銀行　上六支店","20日締め翌日15日支払い"]},
-    {title:"所在地",      list:["〒542-0012","大阪市中央区谷町9丁目2番1号"]},
-    {title:"連絡先",      list:["電話: 06-6791-2167","FAX: 06-6761-2162","e-mail: simiken9@eagle.ocn.ne.jp"]},
+    {title:"所在地",      list:["〒" + general.POSTAL_CODE, general.ADDRESS]},
+    {title:"連絡先",      list:["電話: " + general.PHONE_NUMBER,"FAX: " + general.FAX_NUMBER,"e-mail: " + general.EMAIL]},
     {title:"従業員数",    list:["12名"]},
 ]
 
