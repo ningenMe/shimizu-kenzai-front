@@ -8,7 +8,7 @@ import { NavLink } from 'atoms/NavLink'
 
 export const Header = () => {
 
-    const links: Link[] = [Links.HOME,Links.COMPANY,Links.WORK,Links.INQUIRY];
+    const links: Link[] = [Links.HOME,Links.WORK,Links.COMPANY,Links.INQUIRY];
 
     return (
         <Navbar expand="lg" style={NavbarStyle}>
