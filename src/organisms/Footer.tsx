@@ -10,7 +10,8 @@ export const Footer = () => {
     <Navbar expand="lg" style={NavbarStyle}>
         <Container>
             <Navbar.Brand style={NavbarBrandStyle}>
-                <Typography variant="h4" style={KosugiMaruStyle}>&copy; 2021　{general.COMPANY_NAME}</Typography>
+                <Typography variant="h4" style={KosugiMaruStyle}>&copy; 2021</Typography>
+                <Typography variant="h4" style={KosugiMaruStyle}>{general.COMPANY_NAME}</Typography>
             </Navbar.Brand>
         </Container>
     </Navbar>

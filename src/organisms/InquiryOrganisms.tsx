@@ -6,9 +6,9 @@ import {general} from 'constants/GeneralConstants'
 export const Address = () => {
     return (
         <Grid container spacing={3}>
-            <Grid item xs={3}>
+            <Grid item sm={3}>
             </Grid>
-            <Grid item xs={6} >
+            <Grid item xs={12} sm={6}>
                 <Card style={{backgroundColor:"#FFFFCC"}}>
                     <Typography align="center" variant="h4" style={KosugiMaruStyle}>{general.COMPANY_NAME}</Typography>
                     <Typography align="center" variant="body1" style={KosugiMaruStyle}>{"〒" + general.POSTAL_CODE + " " + general.ADDRESS}</Typography>
@@ -17,7 +17,7 @@ export const Address = () => {
                     <Typography align="center" variant="body1" style={KosugiMaruStyle}>{"E-MAIL: " + general.EMAIL}</Typography>
                 </Card>
             </Grid>
-            <Grid item xs={3}>
+            <Grid item sm={3}>
             </Grid>
         </Grid>
     );
