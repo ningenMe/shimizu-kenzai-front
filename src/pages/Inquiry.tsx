@@ -1,6 +1,6 @@
 import {Container,Grid} from '@material-ui/core';
 import {GoogleMapFrame,AddressFrame} from 'organisms/InquiryOrganisms'
-import {PageTitle} from 'atoms/PageTitle'
+import {PageTitle} from 'molecules/PageMolecules'
 
 export const Inquiry = () => {
   return (

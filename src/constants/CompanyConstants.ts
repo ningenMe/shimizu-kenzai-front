@@ -1,4 +1,4 @@
-import {CompanyContent} from 'interfaces/CompanyInterfaces'
+import {CompanyContent} from 'interfaces/Content'
 import {general} from 'constants/GeneralConstants'
 
 export const orverViewContents : ReadonlyArray<CompanyContent> = [
