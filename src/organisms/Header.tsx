@@ -10,7 +10,7 @@ import {KosugiMaruStyle} from 'styles/FontStyle'
 
 export const Header = () => {
 
-    const links: Link[] = [Links.HOME,Links.WORK,Links.COMPANY,Links.INQUIRY];
+    const links: Link[] = [Links.HOME,Links.WORK,Links.COMPANY,Links.HISTORY,Links.INQUIRY];
 
     return (
         <Navbar expand="xl" style={NavbarStyle}>

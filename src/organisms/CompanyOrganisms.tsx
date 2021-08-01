@@ -3,7 +3,7 @@ import {CompanyTitle} from 'atoms/CompanyAtoms'
 import {ContentList} from 'molecules/CompanyMolecules'
 import {orverViewContents,historyContents} from 'constants/CompanyConstants'
 
-export const Overview = () => {
+export const OverviewFrame = () => {
   return (
         <Paper elevation={5}> 
             <CompanyTitle body="会社概要"/>
@@ -12,7 +12,7 @@ export const Overview = () => {
     );
 }
 
-export const History = () => {
+export const HistoryFrame = () => {
     return (
           <Paper elevation={5}> 
               <CompanyTitle body="沿革"/>
