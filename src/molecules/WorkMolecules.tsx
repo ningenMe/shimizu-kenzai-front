@@ -1,5 +1,5 @@
-import {Card,CardMedia,CardContent } from '@material-ui/core';
-import {WorkImageContent} from 'interfaces/Content'
+import {Card,CardMedia,CardContent,Divider,Grid,Typography } from '@material-ui/core';
+import {WorkImageContent,WorkContent} from 'interfaces/Content'
 import {WorkTitleBody,WorkTitleBar} from 'atoms/WorkTitle'
 
 export const WorkTitle = ({body}:{body:string}) => {
@@ -12,24 +12,68 @@ export const WorkTitle = ({body}:{body:string}) => {
   )
 }
 
-export const WorkCard = ({content}:{content:WorkImageContent}) => {
 
+export const WorkCard = ({content}:{content:WorkContent}) => {
+  
   return (
     <Card 
       elevation={10}
     >
-      <CardMedia
-        component="img"
-        title={content.imageTitle}
-        alt={content.imageTitle}
-        src={content.src}
-        style = {{height:250, width:250}}
-      />
       <CardContent>
-        {content.title}
-        <br/>
-        {content.body}
+        <Typography variant="h4">
+          {content.title}
+        </Typography>
+        <Divider
+          style = {{
+            height:5
+          }}
+        />
+        <Typography variant="body1">
+          {content.body}
+        </Typography>
       </CardContent>
     </Card>
   )
 }
+
+export const WorkImageCard = ({content}:{content:WorkImageContent}) => {
+  
+  return (
+    <Card 
+      elevation={10}
+    >
+      <Grid container>
+        <Grid xs={12} sm={4} item>
+          <CardMedia
+            component="img"
+            title={content.imageTitle}
+            alt={content.imageTitle}
+            src={content.src}
+            style = {{height:200, width:200}}
+          />
+        </Grid>
+        <Grid xs={12} sm={8} item>
+          <Divider
+            style = {{
+              height:5
+            }}
+          />
+          <CardContent>
+            <Typography variant="h4">
+              {content.title}
+            </Typography>
+            <Divider
+              style = {{
+                height:5
+              }}
+            />
+            <Typography variant="body1">
+              {content.body}
+            </Typography>
+          </CardContent>
+        </Grid>
+      </Grid>
+    </Card>
+  )
+}
+
