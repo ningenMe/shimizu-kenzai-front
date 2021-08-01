@@ -13,4 +13,17 @@ export const constructContents : ReadonlyArray<ConstructContent> = [
         prefecture: "大阪府",
         date: "2016-02"
     },
+    {
+        name: "生駒北スポーツセンター多目的グラウンド防球ネット設置工事",
+        order: "生駒市",
+        prefecture: "大阪府",
+        date: "2016-02"
+    },
+    {
+        name: "十三(南行)他バス停留所標識撤去・設置及びその他工事",
+        order: "大阪市交通局",
+        prefecture: "大阪府",
+        date: "2016-02"
+    }
+
 ]
