@@ -1,3 +1,3 @@
 export const NavlinkStyle = {
-    color:"#ffffff"
+    color:"#000000"
 }

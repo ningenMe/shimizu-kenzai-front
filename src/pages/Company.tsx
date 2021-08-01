@@ -1,5 +1,5 @@
 import {Container,Grid } from '@material-ui/core';
-import {PageTitle} from 'atoms/PageTitle'
+import {PageTitle} from 'molecules/PageMolecules'
 import {OverviewFrame} from 'organisms/CompanyOrganisms'
 
 export const Company = () => {

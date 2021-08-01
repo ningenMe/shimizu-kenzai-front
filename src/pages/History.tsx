@@ -1,5 +1,5 @@
 import {Container,Grid } from '@material-ui/core';
-import {PageTitle} from 'atoms/PageTitle'
+import {PageTitle} from 'molecules/PageMolecules'
 import {HistoryFrame} from 'organisms/HistoryOrganisms'
 
 export const History = () => {

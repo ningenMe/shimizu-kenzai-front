@@ -1,6 +1,6 @@
 import { List,ListItem,ListItemIcon,Divider,Typography } from '@material-ui/core';
 import InboxIcon from '@material-ui/icons/Inbox'
-import {CompanyContent} from 'interfaces/CompanyInterfaces'
+import {CompanyContent} from 'interfaces/Content'
 import {NoteSerifStyle} from 'styles/FontStyle'
 
 export const ContentList = ({contents}:{contents:ReadonlyArray<CompanyContent>}) => {
