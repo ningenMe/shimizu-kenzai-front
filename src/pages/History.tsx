@@ -1,8 +1,8 @@
 import {Container,Grid } from '@material-ui/core';
 import {PageTitle} from 'atoms/PageTitle'
-import {OverviewFrame} from 'organisms/CompanyOrganisms'
+import {HistoryFrame} from 'organisms/HistoryOrganisms'
 
-export const Company = () => {
+export const History = () => {
   return (
       <Container>
           <Grid container spacing={3}>
@@ -10,10 +10,10 @@ export const Company = () => {
             </Grid>
 
             <Grid item xs={12} spacing={3}>
-              <PageTitle body="会社概要"/> 
+              <PageTitle body="沿革"/> 
             </Grid>
             <Grid item xs={12} spacing={3}>
-              <OverviewFrame />
+              <HistoryFrame />
             </Grid>
 
             <Grid item xs={12} spacing={3}>

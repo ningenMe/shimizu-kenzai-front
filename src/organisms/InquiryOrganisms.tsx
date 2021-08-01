@@ -3,7 +3,7 @@ import Iframe from 'react-iframe'
 import {KosugiMaruStyle} from 'styles/FontStyle'
 import {general} from 'constants/GeneralConstants'
 
-export const Address = () => {
+export const AddressFrame = () => {
     return (
         <Grid container spacing={3}>
             <Grid item sm={3}>
@@ -23,7 +23,7 @@ export const Address = () => {
     );
 }
 
-export const GoogleMap = () => {
+export const GoogleMapFrame = () => {
   return (
         <Grid container spacing={3}>
             <Grid item xs={1} sm={4}>

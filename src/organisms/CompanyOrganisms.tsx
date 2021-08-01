@@ -1,9 +1,9 @@
 import {Paper } from '@material-ui/core';
 import {CompanyTitle} from 'atoms/CompanyAtoms'
 import {ContentList} from 'molecules/CompanyMolecules'
-import {orverViewContents,historyContents} from 'constants/CompanyConstants'
+import {orverViewContents} from 'constants/CompanyConstants'
 
-export const Overview = () => {
+export const OverviewFrame = () => {
   return (
         <Paper elevation={5}> 
             <CompanyTitle body="会社概要"/>
@@ -11,12 +11,3 @@ export const Overview = () => {
         </Paper>
     );
 }
-
-export const History = () => {
-    return (
-          <Paper elevation={5}> 
-              <CompanyTitle body="沿革"/>
-              <ContentList contents={historyContents}/>
-          </Paper>
-      );
-  }

@@ -1,5 +1,5 @@
 import {Container,Grid} from '@material-ui/core';
-import {GoogleMap,Address} from 'organisms/InquiryOrganisms'
+import {GoogleMapFrame,AddressFrame} from 'organisms/InquiryOrganisms'
 import {PageTitle} from 'atoms/PageTitle'
 
 export const Inquiry = () => {
@@ -13,11 +13,11 @@ export const Inquiry = () => {
             <PageTitle body="お問い合わせ"/> 
           </Grid>
           <Grid item xs={12} spacing={3}>
-            <Address />
+            <AddressFrame />
           </Grid>
 
           <Grid item xs={12} spacing={3}>
-            <GoogleMap/>
+            <GoogleMapFrame/>
           </Grid>
 
           <Grid item xs={12} spacing={3}>
