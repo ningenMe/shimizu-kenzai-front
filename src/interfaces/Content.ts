@@ -22,3 +22,8 @@ export interface WorkContent {
     title: string,
     body: string,
 }
+
+export interface HomeImageContent {
+    title: string,
+    src: string
+}
