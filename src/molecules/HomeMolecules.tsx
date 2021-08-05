@@ -1,4 +1,4 @@
-import {Card,CardMedia,CardContent,Divider,Grid,Typography } from '@material-ui/core';
+import {Card,CardMedia } from '@material-ui/core';
 import {HomeImageContent} from 'interfaces/Content'
 
 export const HomeImageCard = ({content}:{content:HomeImageContent}) => {

@@ -1,8 +1,10 @@
+const prefix = process.env.REACT_APP_PATH_PREFIX;
+
 export class Paths {
-    static readonly HOME      : string = "/shimizu-kenzai-front/#/home"
-    static readonly WORK      : string = "/shimizu-kenzai-front/#/work"
-    static readonly CONSTRUCT : string = "/shimizu-kenzai-front/#/construct"
-    static readonly COMPANY   : string = "/shimizu-kenzai-front/#/company"
-    static readonly HISTORY   : string = "/shimizu-kenzai-front/#/history"
-    static readonly INQUIRY   : string = "/shimizu-kenzai-front/#/inquiry"
+    static readonly HOME      : string = prefix + "/#/home"
+    static readonly WORK      : string = prefix + "/#/work"
+    static readonly CONSTRUCT : string = prefix + "/#/construct"
+    static readonly COMPANY   : string = prefix + "/#/company"
+    static readonly HISTORY   : string = prefix + "/#/history"
+    static readonly INQUIRY   : string = prefix + "/#/inquiry"
 }
