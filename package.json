@@ -26,6 +26,7 @@
     "@types/react-router-dom": "^5.1.6",
     "axios": "^0.21.1",
     "bootstrap": "^5.0.2",
+    "dotenv-cli": "^4.0.0",
     "node-sass": "4.14.1",
     "react": "^17.0.1",
     "react-bootstrap": "^1.6.1",
@@ -39,8 +40,12 @@
     "web-vitals": "^0.2.4"
   },
   "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
+    "start": "cp .env.dev .env && react-scripts start",
+    "build": "cp .env.dev .env && react-scripts build",
+    "start-stg": "cp .env.stg .env && react-scripts start",
+    "build-stg": "cp .env.stg .env && react-scripts build",
+    "start-prod": "cp .env.prod .env && react-scripts start",
+    "build-prod": "cp .env.prod .env && react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
