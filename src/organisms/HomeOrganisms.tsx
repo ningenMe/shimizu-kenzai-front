@@ -1,4 +1,3 @@
-import {Grid,Typography } from '@material-ui/core';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import SwiperCore, {EffectFlip,Pagination,Navigation} from 'swiper/core';
 import {HomeImageCard} from 'molecules/HomeMolecules'
@@ -30,11 +29,13 @@ export const NotificationFrame = () => {
 }
 
 export const ImageSlideFrame = () => {
+  const prefix = process.env.REACT_APP_PATH_PREFIX;
+
   const imageContents : ReadonlyArray<HomeImageContent> = [
-    {title:"slide1",src:"/slide/slide1.jpeg"},
-    {title:"slide2",src:"/slide/slide2.jpeg"},
-    {title:"slide3",src:"/slide/slide3.jpeg"},
-    {title:"slide4",src:"/slide/slide4.jpeg"},
+    {title:"slide1",src: prefix + "/slide/slide1.jpeg"},
+    {title:"slide2",src: prefix + "/slide/slide2.jpeg"},
+    {title:"slide3",src: prefix + "/slide/slide3.jpeg"},
+    {title:"slide4",src: prefix + "/slide/slide4.jpeg"},
   ]
 
   return (
