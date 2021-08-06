@@ -18,6 +18,13 @@ export interface WorkImageContent {
     src: string
 }
 
+export interface PresidentImageContent {
+    title: string,
+    bodyList: ReadonlyArray<string>,
+    imageTitle: string,
+    src: string
+}
+
 export interface WorkContent {
     title: string,
     body: string,
