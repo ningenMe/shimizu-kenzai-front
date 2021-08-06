@@ -1,5 +1,6 @@
-import {Card,CardMedia } from '@material-ui/core';
+import {Card,CardMedia,Typography } from '@material-ui/core';
 import {HomeImageContent} from 'interfaces/Content'
+import {KosugiMaruStyle} from 'styles/FontStyle'
 
 export const HomeImageCard = ({content}:{content:HomeImageContent}) => {
   
@@ -10,10 +11,18 @@ export const HomeImageCard = ({content}:{content:HomeImageContent}) => {
         title={content.title}
         alt={content.title}
         src={content.src}
-        style = {{height:500, width:500}}
+        style = {{height:400, width:1200}}
         />
     </Card>
     )
-  }
+}
   
+export const HomeSlideTitle = () => {
+  
+    return (
+        <Typography align="center" variant="h4" style={KosugiMaruStyle}>
+            施工事例
+        </Typography>
+    )
+}
   
